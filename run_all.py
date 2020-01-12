@@ -16,8 +16,8 @@ def get_all_cases():
 
 def run_all_cases(testcases):
     "执行所有用例"
-    now_time = time.strftime("%Y%m%d%H%M%S")
-    report_file = os.path.join(REPORT_PATH, "Report_{}.html".format(now_time))
+    # now_time = time.strftime("%Y%m%d%H%M%S")
+    report_file = os.path.join(REPORT_PATH, "TestReport.html")
     fp = open(report_file, "wb")  # 以二进制写入方式打开
     runner = HTMLTestReportCN(
         stream=fp,
